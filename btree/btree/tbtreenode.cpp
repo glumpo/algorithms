@@ -26,7 +26,7 @@ TBTreeItem TBTreeNode::Pop(size_t n) {
     auto r = this->RCI(n);
 
     children.Pop(l);
-    children.Pop(r);
+    children.Pop(r - 1);
     return items.Pop(n);
 }
 
